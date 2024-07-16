@@ -1,13 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
+  direction: rtl;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+ 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: "BYekan";
+  src:
+       url("../public/IranSans/IRANSansXFaNum-Regular.woff") format("woff"),
+       url("../public/IranSans/IRANSansXFaNum-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "BYekan";}
+ 
+
+  :where(.css-dev-only-do-not-override-p8b6i) .ant-form-item .ant-form-item-explain-error {  
+    color: #fdfdfd !important;
+
+  }  
